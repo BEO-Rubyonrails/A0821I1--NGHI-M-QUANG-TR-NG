@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sự kiện chuột</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="https://sc04.alicdn.com/kf/HTB13md0B41YBuNjy1zcq6zNcXXay.jpg_Q55.jpg" />
+<p> chạm vào phím bên dưới to di chuyển ảnh qua phải</p>
+<input type="button" value="Click me!"/>
+</form>
+<input type="button" value="Click me!" onclick="moveRight();"/>
+<script>
+let imgObj = null;
+imgObj = document.getElementById('myImage');
+
+
+imgObj.style.position = 'relative';
+imgObj.style.left = 'Opx';
+var value = 20
+function moveRight() {
+value = value + 20
+    document.getElementById('myImage').style.left = value + 'px';
+}
+
+</script>
+
+
+</body>
+</html>
