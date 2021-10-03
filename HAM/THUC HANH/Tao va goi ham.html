@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tao ham</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+if(answer){
+    result = 'Excellent. we will play chess';
+} else {
+    result = ' may be later';
+}
+return result;
+    }
+    let conFirmAnswer = confirm('shall we play game?');
+    let theAnswer = processConfirm(conFirmAnswer);
+    alert(theAnswer)
+
+
+
+</script>
+</body>
+</html>
