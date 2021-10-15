@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let h = prompt('chieu cao la');
+    for(let row = 1; row <= h; row++) {
+        for (let col = 1; col <= row; col++) {
+            if ( col == 1 || col == row || row == h) {
+                document.write('*');
+            } else {
+                document.write('&nbsp;&nbsp;');
+            }
+        }
+        document.write('<br>');
+    }
+
+
+
+</script>
+</body>
+</html>
