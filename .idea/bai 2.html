@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= prompt("nhap vao mot chuoi");
+    let n=0;
+    a = a.replace(/\s/g, '');
+    for(let i=0; i<a.length;i++){
+        if(a[i]==a[i].toUpperCase())
+            n++;
+    }
+    if(n==0){
+        alert("The Strings is not contain upper char");
+    }else
+        alert("so ki tu hoa la  "+n);
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var sayHello = function(name, message){
+        console.log(message + name);
+    };
+
+
+    sayHello.call(sayHello, 'Cường', ' Xin chào ');
+    sayHello.apply(sayHello, ['Cường', ' Xin chào ']);
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n= parseInt(prompt("nhap so ptu cua mang :"));
+    let arr = new Array(n);
+    for (let i = 0; i < arr.length; i++) {
+        let tmp =parseInt(prompt("nhập gia tri ptu thứ " + (i + 1)));
+        arr[i] = tmp;
+    }
+    function isPrime(num) {
+        for(var i = 2; i < num; i++)
+            if(num % i === 0)
+                return false;
+        return num > 1;
+    }
+    let rs=[];
+    for(let i=0;i<arr.length;i++){
+        if(isPrime(arr[i]))
+            rs.push(arr[i]);
+    }
+    rs.sort(function (a,b){
+        return a-b;
+    })
+    document.write("cac so nguyen to la : "+rs.toString());
+</script>
+</body>
+</html>

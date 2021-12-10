@@ -6,13 +6,22 @@
 </head>
 <body>
 <script>
-    let h = prompt('nhap chieu cao');
-    let a = prompt('nhap chieu rong');
-    for (row = 1; row <= h; row++){
-        for(col =1; col <= a; col++){
-            if(col == a || col <=)
+    let width = parseInt(prompt('chieu rong la'));
+    let height = parseInt(prompt('chieu dai la'));
+let shape = '';
+for(let i = 1; i <= height; i++){
+    for(let j = 1; j <= width; j++){
+        if(i === 1 || i === height){
+            shape += '*';
+        }else if (j === 1 || j === width){
+            shape += '*';
+        }else {
+            shape += '&ensp;'
         }
     }
+shape += '<br>'
+}
+document.write(shape);
 </script>
 </body>
 </html>
